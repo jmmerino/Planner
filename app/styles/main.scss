@@ -10,6 +10,11 @@ $planning-bg-color: #EEF1F3;
 $link-color: #2B76B0;
 $text-color: #878F95;
 
+$experience-color: #288AD6;
+$attraction-color: #47A899;
+$restaurant-color: #FA5E5B;
+
+
 
 
 .browsehappy {
@@ -28,8 +33,25 @@ html, body{
 }
 
 body{
-    padding-top:50px;    
+    padding-top:55px;    
 }
+
+p{
+    margin:0px;
+}
+
+// PLACE CATEGORIES
+.glyphicon-star-empty{
+    color: $experience-color;
+}
+.glyphicon-cutlery{
+    color: $restaurant-color;
+}
+.glyphicon-eye-open{
+    color: $attraction-color;
+}
+
+
 
 
 // ------ NAV BAR ------ 
@@ -195,6 +217,7 @@ body{
 
 .planner-planning{
     padding-right:0px;
+    padding-left:0px;
 }
 .planner-content{
     padding-left:0px;    
@@ -205,6 +228,62 @@ body{
 
 
 
+// PLANNING CONTENT
+
+.planning-content{
+    padding:30px;    
+}
+
+.planning-content-content{
+    height: 100%;
+    overflow:auto;
+}
+
+.planning-content-header{
+    margin-bottom:30px;
+}
+.planning-content-content{
+
+}
+
+.planning-content-title{
+    color: darken($text-color, 50%);
+    font-size:2.5em;
+}
+.planning-content-subtitle{
+    color: $text-color;
+    font-size:1em;
+}
+
+.planning-content-item{
+    padding:0px;
+    border-radius:0px;
+    border:0px;
+    height: 310px;
+    .caption{
+        padding: 5px 10px;
+    }
+    .planning-content-item-image{
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+    }
+    img{
+        position:relative;
+        left:100%;
+        margin-left:-200%;
+    }
+
+}
+
+.planning-content-item-title{
+    font-size:1.3em;
+    color:darken($text-color, 30%);
+}
+
+.planning-content-item-category{
+    color:$text-color;   
+}
 
 
 // HELPERS
