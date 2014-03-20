@@ -1,0 +1,351 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->    
+    <link rel="stylesheet" href="bower_components/flickrbomb/css/flickrbomb.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="plannerApp">  
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="navbar navbar-fixed-top planner-nav-bar" role="navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand lp-brand" href="#">
+          
+        </a>
+        <div class="col-sm-5 col-md-3">
+          <form class="navbar-form planner-navbar-searchform" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+              <div class="input-group-btn">
+                <button class="btn btn-navbar-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>  
+        </div>
+        
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="planner-navbar-link">
+              <span class="glyphicon glyphicon-th"></span> Grid
+            </a>    
+          </li>
+          <li>
+            <a  href="#" class="planner-navbar-link">
+              <span class="glyphicon glyphicon-map-marker"></span> Map
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Add your site or application content here -->
+    <div class="full-height container-fluid">
+      <div class="full-height">
+        <div class="full-height planner-planning col-md-3">
+          <div class="planning-day">Miércoles 18 de Marzo</div>
+
+          <div class="planning-city-block">            
+            <p class="planning-city">
+              Madrid
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </p>
+            <div class="planning-place">
+              <div class="planning-place-image">
+                <img src="flickr://Parque el retiro, madrid" width="50px" height="50px">  
+              </div>
+              <p class="planning-place-title">
+                Parque del Retiro
+              </p>                                  
+            </div>
+            <div class="planning-place">
+              <div class="planning-place-image">
+                <img src="flickr://Puerta del sol, madrid" width="50px" height="50px">  
+              </div>
+              <p class="planning-place-title">
+                Puerta del sol
+              </p>                                  
+            </div>
+          </div>
+          <div class="planning-city-block">
+            <p class="planning-city">
+              Toledo
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </p>
+          </div>
+
+          <div class="planning-day">Jueves 19 de Marzo</div>
+
+          <div class="planning-city-block">
+            <p class="planning-city">
+              Salamanca
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </p>
+          </div>
+          <div class="planning-city-block">
+            <p class="planning-city">
+              Avila
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </p>
+          </div>
+
+        </div>
+        <div class="full-height planning-content col-md-9">
+
+          <div class="row planning-content-header">
+            <div class="col-md-10">
+              <p class="planning-content-title">
+                New York
+              </p>
+              <p class="planning-content-subtitle">
+                New york, United states of America
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="planning-content-subtitle">
+                Filter by Categories
+              </p>
+            </div>
+          </div>
+
+          <div class="row planning-content-content">
+
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">                  
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">                    
+                </div>                
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    Attraction
+                  </p>     
+                  <p class="planning-content-item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada metus viverra elit dictum malesuada. Donec sagittis ante et massa pretium aliquet. 
+                  </p>  
+                  <span></span>           
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p> 
+                  <p class="planning-content-item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada metus viverra elit dictum malesuada. Donec sagittis ante et massa pretium aliquet.
+                  </p>                   
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p>  
+                  <p class="planning-content-item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada metus viverra elit dictum malesuada. Donec sagittis ante et massa pretium aliquet. 
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    Experience
+                  </p>                  
+                  <p class="planning-content-item-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada metus viverra elit dictum malesuada. Donec sagittis ante et massa pretium aliquet. Suspendisse non suscipit augue. 
+                  </p>  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">                  
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">                    
+                </div>                
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    Attraction
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    Experience
+                  </p>                  
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">                  
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">                    
+                </div>                
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    Attraction
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                    Restaurant
+                  </p>                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="planning-content-item thumbnail">
+                <div class="planning-content-item-image">
+                  <img src="/images/newyork.jpg" style="width: 300px; height: 200px;">
+                </div>
+                <div class="caption">
+                  <p class="planning-content-item-title">Thumbnail label</p>
+                  <p class="planning-content-item-category">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    Experience
+                  </p>                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>        
+    </div>
+
+  
+
+     
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/flickrbomb/js/underscore.js"></script>
+    <script src="bower_components/flickrbomb/js/backbone.js"></script>
+    <script src="bower_components/flickrbomb/js/flickrbomb.js"></script>    
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
