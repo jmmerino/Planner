@@ -14,4 +14,18 @@ angular.module('plannerControllers').controller('LandingController', ['$rootScop
     };    
     $scope.details = '';
 
+
+    // ui-bootstrap datepicker
+    $scope.showWeeks = true;
+    $scope.dateOptions = {
+      'year-format': "'yy'",
+      'starting-day': 1
+    };
+    $scope.open = function($event, instance) {
+      $event.preventDefault();
+      $event.stopPropagation();
+
+      $scope[instance] = true;
+    };
+
   }]);

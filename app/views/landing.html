@@ -21,15 +21,15 @@
           <div class="trip-dates row with-margin">            
             <div class="col-md-6">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Init date">
-                <span class="input-group-addon">
+                <input type="text" class="form-control" placeholder="Init date" datepicker-popup ng-model="trip.initDate" is-open="dtpInitDate" ng-required="true">
+                <span class="input-group-addon" >
                   <i class="glyphicon glyphicon-calendar"></i>
                 </span>  
               </div>
             </div>
             <div class="col-md-6">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="End date">
+                <input type="text" class="form-control" placeholder="End date" datepicker-popup ng-model="trip.endDate" is-open="dtpEndDate" ng-required="true">
                 <span class="input-group-addon">
                   <i class="glyphicon glyphicon-calendar"></i>
                 </span>  

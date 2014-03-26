@@ -7,7 +7,8 @@ var plannerApp = angular.module('plannerApp', [
   'plannerControllers',
   'plannerServices',
   'ui.router',
-  'ngAutocomplete'
+  'ngAutocomplete',
+  'ui.bootstrap.datepicker'
 ]);
 
 //Create namespace for controllers
