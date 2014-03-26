@@ -294,6 +294,17 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }]
       },
+      bowerAssets:{
+        files:[{        
+          expand: true,  
+          flatten: true,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.app %>/template/datepicker',
+          src:[
+            'bower_components/angular-ui-bootstrap/template/datepicker/*'
+          ]
+        }],        
+      },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
@@ -368,6 +379,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'bower-install',
+      'copy:bowerAssets',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -392,6 +404,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'bower-install',
+    'copy:bowerAssets',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
