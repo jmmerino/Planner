@@ -1,0 +1,41 @@
+<div class="landing" ng-controller="LandingController">
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Trip Planner</h3>              
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Where do you want to go?</h1>            
+          <p class="lead">
+            <form action="main.html" role="search">
+              <div class="input-group">
+                <input ng-model="mainCity" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                  <button ng-click="startPlanning(mainCity)" class="btn btn-navbar-search" type="button">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>  
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Trip planner for you by <a href="https://www.lonelyplanet.com">LonelyPlanet</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>  

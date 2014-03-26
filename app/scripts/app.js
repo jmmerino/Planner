@@ -1,18 +1,39 @@
 'use strict';
 
-angular.module('plannerApp', [
+var plannerApp = angular.module('plannerApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
-])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+  'plannerControllers',
+  'plannerServices',
+  'ui.router'
+]);
+
+//Create namespace for controllers
+angular.module('plannerControllers', []);
+angular.module('plannerServices', []);
+
+
+plannerApp.config(['$stateProvider', function ($stateProvider) {
+    $stateProvider
+      .state('landing', {
+        url: '',
+        templateUrl: 'views/landing.html'
       })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+      .state('planner', {
+        url: '/planner',
+        templateUrl: 'views/planner.html',
+      })
+      .state('planner.list', {
+        url: '/list',
+        views: {          
+          'central': {templateUrl: 'views/list.html'}
+        }
+      })
+      .state('planner.map', {
+        url: '/map',
+        views: {          
+          'central': {templateUrl: 'views/map.html'}
+        }
+      });     
+  }]);

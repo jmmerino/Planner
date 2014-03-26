@@ -1,0 +1,37 @@
+<nav class="navbar navbar-fixed-top planner-nav-bar" role="navigation" ng-controller="MainNavController">
+  <div class="container-fluid">
+    <a class="navbar-brand lp-brand" href="#">
+      
+    </a>
+    <div class="col-sm-5 col-md-3">
+      <form class="navbar-form planner-navbar-searchform" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+          <div class="input-group-btn">
+            <button class="btn btn-navbar-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>  
+    </div>
+    
+    <ul class="nav navbar-nav">
+      <li>
+        <a ng-click="setPage('planner.list')" class="planner-navbar-link">
+          <span class="glyphicon glyphicon-th"></span> Grid
+        </a>    
+      </li>
+      <li>
+        <a ng-click="setPage('planner.map')" class="planner-navbar-link">
+          <span class="glyphicon glyphicon-map-marker"></span> Map
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Add your site or application content here -->
+<div class="full-height container-fluid" ng-controller="PlannerController">
+  <div ng-controller="TripController" ng-include="'views/trip.html'" class="full-height planner-planning col-md-3"></div>
+  <div ui-view="central" class="full-height"></div>        
+</div>

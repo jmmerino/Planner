@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="plannerApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="plannerApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="plannerApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="plannerApp"> <!--<![endif]-->
+<head>
    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,56 +13,24 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->    
-    <link rel="stylesheet" href="bower_components/flickrbomb/css/flickrbomb.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/index.css -->
-    <link rel="stylesheet" href="styles/index.css">
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
 
-  <body>
+  <body class="{{ bodyLayout }}">  
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+     
+    <div ui-view class="full-height"></div>
 
-    <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Trip Planner</h3>              
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Where do you want to go?</h1>            
-            <p class="lead">
-              <form action="main.html" role="search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                  <div class="input-group-btn">
-                    <button class="btn btn-navbar-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                  </div>
-                </div>
-              </form>  
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Trip planner for you by <a href="https://www.lonelyplanet.com">LonelyPlanet</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-       
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -78,15 +46,18 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/flickrbomb/js/underscore.js"></script>
-    <script src="bower_components/flickrbomb/js/backbone.js"></script>
-    <script src="bower_components/flickrbomb/js/flickrbomb.js"></script>    
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/landingController.js"></script>
+    <script src="scripts/controllers/mainNavController.js"></script>
+    <script src="scripts/controllers/plannerController.js"></script>
+    <script src="scripts/services/placeService.js"></script>
+    <script src="scripts/services/planningService.js"></script>
+    <script src="scripts/controllers/tripController.js"></script>
     <!-- endbuild -->
 
   </body>
