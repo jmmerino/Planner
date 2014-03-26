@@ -13,18 +13,34 @@
 
         <div class="inner cover">
           <h1 class="cover-heading">Where do you want to go?</h1>            
-          <p class="lead">
-            <form action="main.html" role="search">
+          <div class="row with-margin">          
+            <div class="col-md-12">
+              <input ng-autocomplete options="options" details="details" ng-model="mainCity" type="text" class="form-control big" placeholder="Search" name="srch-term" id="srch-term">                        
+            </div>
+          </div>
+          <div class="trip-dates row with-margin">            
+            <div class="col-md-6">
               <div class="input-group">
-                <input ng-model="mainCity" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                  <button ng-click="startPlanning(mainCity)" class="btn btn-navbar-search" type="button">
-                    <i class="glyphicon glyphicon-search"></i>
-                  </button>
-                </div>
+                <input type="text" class="form-control" placeholder="Init date">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-calendar"></i>
+                </span>  
               </div>
-            </form>  
-          </p>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="End date">
+                <span class="input-group-addon">
+                  <i class="glyphicon glyphicon-calendar"></i>
+                </span>  
+              </div>              
+            </div>                       
+          </div>
+          <div class="row with-margin">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Plan trip</button>  
+            </div>            
+          </div>
         </div>
 
         <div class="mastfoot">

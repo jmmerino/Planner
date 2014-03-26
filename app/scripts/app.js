@@ -6,7 +6,8 @@ var plannerApp = angular.module('plannerApp', [
   'ngSanitize',
   'plannerControllers',
   'plannerServices',
-  'ui.router'
+  'ui.router',
+  'ngAutocomplete'
 ]);
 
 //Create namespace for controllers

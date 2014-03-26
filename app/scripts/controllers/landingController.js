@@ -8,4 +8,10 @@ angular.module('plannerControllers').controller('LandingController', ['$rootScop
       $location.path('/planner');
     };
 
+    //ngAutocomplete    
+    $scope.options = {      
+      types: '(cities)'
+    };    
+    $scope.details = '';
+
   }]);
