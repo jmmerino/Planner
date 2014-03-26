@@ -1,12 +1,8 @@
 'use strict';
 
-angular.module('plannerControllers').controller('LandingController', ['$rootScope', '$scope', '$location',
-  function($rootScope, $scope, $location){
-    $rootScope.bodyLayout = 'landing-page';
-
-    $scope.startPlanning = function(){
-      $location.path('/planner');
-    };
+angular.module('plannerControllers').controller('LandingController', ['$rootScope', '$scope', '$location', 'TripService',
+  function($rootScope, $scope, $location, Trip){
+    $rootScope.bodyLayout = 'landing-page';    
 
     //ngAutocomplete    
     $scope.options = {      
@@ -14,18 +10,25 @@ angular.module('plannerControllers').controller('LandingController', ['$rootScop
     };    
     $scope.details = '';
 
+    // ui-bootstrap datepicker    
+    
+    // TRIP
+    $scope.trip = Trip;
+    
 
-    // ui-bootstrap datepicker
-    $scope.showWeeks = true;
-    $scope.dateOptions = {
-      'year-format': "'yy'",
-      'starting-day': 1
+    // FUNCTIONS
+
+    $scope.startPlanning = function(){
+      $location.path('/planner');
     };
+
     $scope.open = function($event, instance) {
       $event.preventDefault();
       $event.stopPropagation();
 
       $scope[instance] = true;
     };
+
+
 
   }]);

@@ -15,7 +15,7 @@
           <h1 class="cover-heading">Where do you want to go?</h1>            
           <div class="row with-margin">          
             <div class="col-md-12">
-              <input ng-autocomplete options="options" details="details" ng-model="mainCity" type="text" class="form-control big" placeholder="Search" name="srch-term" id="srch-term">                        
+              <input ng-autocomplete options="options" details="details" ng-model="trip.mainCity" type="text" class="form-control big" placeholder="Search" name="srch-term" id="srch-term">                        
             </div>
           </div>
           <div class="trip-dates row with-margin">            
@@ -38,7 +38,7 @@
           </div>
           <div class="row with-margin">
             <div class="col-md-12">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Plan trip</button>  
+              <button ng-click="startPlanning()" type="button" class="btn btn-primary btn-lg btn-block">Plan trip</button>  
             </div>            
           </div>
         </div>
