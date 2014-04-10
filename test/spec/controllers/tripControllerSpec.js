@@ -1,22 +1,28 @@
 'use strict';
 
-describe('Controller: TripcontrollerCtrl', function () {
+describe('Controller: Tripcontroller', function () {  
 
   // load the controller's module
   beforeEach(module('plannerApp'));
 
   var TripcontrollerCtrl,
-    scope;
+    scope, 
+    Trip;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
+
     scope = $rootScope.$new();
-    TripcontrollerCtrl = $controller('TripcontrollerCtrl', {
-      $scope: scope
+    Trip = {};
+    TripcontrollerCtrl = $controller('TripController', {
+      $scope: scope,
+      Trip: Trip
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should do the testing correctly', function () {       
+    expect(true).toBe(false);
   });
 });
+
+

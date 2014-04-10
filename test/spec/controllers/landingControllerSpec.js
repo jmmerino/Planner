@@ -22,6 +22,7 @@ describe('Controller: LandingController', function () {
   }));
 
   it('should set the bodyLayout in the rootScope', function () {
+    
     expect(rootScope.bodyLayout).toBe('landing-page');
   });
 

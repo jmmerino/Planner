@@ -1,18 +1,18 @@
-'use strict';
+// 'use strict';
 
-describe('Service: Planning', function () {
+// describe('Service: Planning', function () {
 
-  // load the service's module
-  beforeEach(module('plannerApp'));
+//   // load the service's module
+//   beforeEach(module('plannerApp'));
 
-  // instantiate service
-  var Planning;
-  beforeEach(inject(function (_Planning_) {
-    Planning = _Planning_;
-  }));
+//   // instantiate service
+//   var Trip;
+//   beforeEach(inject(function (_Trip_) {
+//     Trip = _Trip_;
+//   }));
 
-  it('should do something', function () {
-    expect(!!Planning).toBe(true);
-  });
-
-});
+//   it('should do something', function () {
+//     expect(!!Trip).toBe(true);
+//   });
+  
+// });
