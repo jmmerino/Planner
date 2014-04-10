@@ -16,6 +16,10 @@ angular.module('plannerControllers', []);
 angular.module('plannerServices', []);
 
 
+plannerApp.constant('plannerConfig', {
+  apiUrl: 'http://api.alfa.tedevs.com/v3/'
+});
+
 plannerApp.config(['$stateProvider', function ($stateProvider) {
     $stateProvider
       .state('landing', {
