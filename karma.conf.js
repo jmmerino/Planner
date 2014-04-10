@@ -17,6 +17,9 @@ module.exports = function(config) {
       'app/bower_components/angular-cookies/angular-cookies.js',
       'app/bower_components/angular-sanitize/angular-sanitize.js',
       'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+      'app/bower_components/ngAutocomplete/src/ngAutocomplete.js',
+      'app/bower_components/angular-ui-bootstrap/src/position/position.js',
+      'app/bower_components/angular-ui-bootstrap/src/datepicker/datepicker.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
@@ -51,6 +54,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
+    // Ignore this, because is overriden by the Gruntfile configuration
     singleRun: false    
   });
 };
